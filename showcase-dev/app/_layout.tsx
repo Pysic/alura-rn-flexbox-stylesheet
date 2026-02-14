@@ -12,11 +12,13 @@ export default function Layout() {
 if (!fontsLoaded) return null;
 
     return (
-        <SafeAreaView style={{ flex: 1 }} edges={['bottom']}>
+        <SafeAreaView style={{ flex: 1, backgroundColor: '#000D1F'}} edges={['bottom']}>
              <Stack
                 screenOptions={{
                     headerTitle: '',
                     headerBackTitle: 'Voltar',
+                    headerStyle: { backgroundColor: '#000D1F' },
+                    headerTintColor: '#F6F6F6'
                 }} 
             />
         </SafeAreaView>

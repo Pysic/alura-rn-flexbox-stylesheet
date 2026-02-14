@@ -9,7 +9,7 @@ type HeaderProps = {
 export default function Header({ name, image }: HeaderProps) {
     return (
         <View>
-            <Text>DEV { name }</Text>
+            <Text style={{ fontFamily: 'Montserrat-SemiBold', fontSize: 24, color: '#F6F6F6', lineHeight: 24 * 1.25}}>DEV { name }</Text>
             <StarIcon />
 
             <View>

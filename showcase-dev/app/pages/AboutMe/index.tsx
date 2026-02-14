@@ -6,7 +6,7 @@ import { ScrollView } from 'react-native'
 
 export default function AboutMe() {
     return(
-        <ScrollView>
+        <ScrollView style={{backgroundColor: '#000D1F'}}>
             <Header name={profile.name} image={require('@/assets/images/profile.png')} />
             <InfoText title='Sobre mim' description={ profile.aboutMe } />
             <Footer />
