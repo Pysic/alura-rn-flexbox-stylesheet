@@ -1,3 +1,4 @@
+import { colors } from '@/tokens/colors';
 import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -12,13 +13,13 @@ export default function Layout() {
 if (!fontsLoaded) return null;
 
     return (
-        <SafeAreaView style={{ flex: 1, backgroundColor: '#000D1F'}} edges={['bottom']}>
+        <SafeAreaView style={{ flex: 1, backgroundColor: colors.background}} edges={['bottom']}>
              <Stack
                 screenOptions={{
                     headerTitle: '',
                     headerBackTitle: 'Voltar',
-                    headerStyle: { backgroundColor: '#000D1F' },
-                    headerTintColor: '#F6F6F6'
+                    headerStyle: { backgroundColor: colors.background },
+                    headerTintColor: colors.onBackground
                 }} 
             />
         </SafeAreaView>

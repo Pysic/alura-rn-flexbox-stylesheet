@@ -1,6 +1,7 @@
+import { colors } from '@/tokens/colors';
 import { Path, Svg } from 'react-native-svg';
 
-export function StarIcon({ size = 60, color = '#22D4FD' }) {
+export function StarIcon({ size = 60, color = colors.primary }) {
   return (
     <Svg width={size} height={size} viewBox="0 0 60 60">
       <Path

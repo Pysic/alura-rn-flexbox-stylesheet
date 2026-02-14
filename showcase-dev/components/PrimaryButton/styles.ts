@@ -1,8 +1,20 @@
+import { colors } from '@/tokens/colors'
+import { fontFamily, fontSize, lineHeight } from '@/tokens/typography'
 import { StyleSheet } from 'react-native'
 
 export const styles = StyleSheet.create(
     {
-        shape: { backgroundColor: '#22D4FD', borderRadius: 16, padding: 23, alignItems: 'center' },
-        text: { color: '#000D1F', fontFamily: 'Montserrat-SemiBold', fontSize: 22, lineHeight: 24 * 1.2 }
+        shape: { 
+            backgroundColor: colors.primary, 
+            borderRadius: 16, 
+            padding: 23, 
+            alignItems: 'center' 
+        },
+        text: { 
+            color: colors.background, 
+            fontFamily: fontFamily.montserrat.semibold, 
+            fontSize: fontSize.body.xl, 
+            lineHeight: fontSize.body.xl * lineHeight.body
+        }
     }
 )

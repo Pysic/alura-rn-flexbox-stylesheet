@@ -1,9 +1,23 @@
+import { colors } from '@/tokens/colors'
+import { fontFamily, fontSize, lineHeight } from '@/tokens/typography'
 import { StyleSheet } from 'react-native'
 
 export const styles = StyleSheet.create(
     {
-        title: { fontFamily: 'KronaOne-Regular', fontSize: 24, color: '#F6F6F6', lineHeight: 24 * 1.25 },
-        highlight: { color: '#22D4FD' },
-        description: { fontFamily: 'Montserrat-Regular', fontSize: 16, color: '#F6F6F6', lineHeight: 16 * 1.2 }
+        title: {
+            fontFamily: fontFamily.kronaOne.regular,
+            fontSize: fontSize.headings.h3, 
+            color: colors.onBackground, 
+            lineHeight: fontSize.headings.h3 * lineHeight.headings 
+        },
+        highlight: { 
+            color: colors.primary 
+        },
+        description: { 
+            fontFamily: fontFamily.montserrat.regular, 
+            fontSize: fontSize.body.md, 
+            color: colors.onBackground, 
+            lineHeight: fontSize.body.md * lineHeight.body 
+        }
     }
 )
