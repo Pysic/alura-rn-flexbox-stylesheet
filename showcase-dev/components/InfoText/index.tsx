@@ -11,7 +11,7 @@ export default function InfoText({ title, highlightTitle, description }: InfoTex
     return (
         <Text>
             <Text style={ styles.title }>{ title }</Text>
-            <Text style={ styles.highlight }> { highlightTitle }</Text>
+            <Text style={[ styles.title, styles.highlight ]}> { highlightTitle }</Text>
             <Text style={ styles.description }>{'\n\n'}{ description }</Text>
         </Text>
     )
