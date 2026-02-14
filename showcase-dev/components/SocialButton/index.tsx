@@ -30,9 +30,9 @@ const title = (socialNetwork: SocialNetworks) => {
 
 export default function SocialButton({ socialNetwork, ...rest }: SocialButtonProps) {
     return (
-        <Pressable {...rest}>
+        <Pressable style={{flexDirection: 'row', borderColor: '#22D4FD', borderWidth: 2, borderRadius: 8, padding: 23, alignItems: 'center' , justifyContent: 'center', gap: 16}} {...rest}>
             { icon(socialNetwork) }
-            <Text>{ title(socialNetwork) }</Text>
+            <Text style={{color: '#F6F6F6', fontFamily: 'Montserrat-SemiBold', fontSize: 22, lineHeight: 24 * 1.2}}>{ title(socialNetwork) }</Text>
         </Pressable>
     )
 }
