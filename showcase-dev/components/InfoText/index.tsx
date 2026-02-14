@@ -1,4 +1,5 @@
 import { Text } from "react-native";
+import { styles } from './styles';
 
 type InfoTextProps = {
   title: string;
@@ -9,9 +10,9 @@ type InfoTextProps = {
 export default function InfoText({ title, highlightTitle, description }: InfoTextProps) {
     return (
         <Text>
-            <Text style={{fontFamily: 'KronaOne-Regular', fontSize: 24, color: '#F6F6F6', lineHeight: 24 * 1.25}}>{ title }</Text>
-            <Text style={{fontFamily: 'KronaOne-Regular', fontSize: 24, color: '#22D4FD', lineHeight: 24 * 1.25}}> { highlightTitle }</Text>
-            <Text style={{fontFamily: 'Montserrat-Regular', fontSize: 16, color: '#F6F6F6', lineHeight: 16 * 1.2}}>{'\n\n'}{ description }</Text>
+            <Text style={ styles.title }>{ title }</Text>
+            <Text style={ styles.highlight }> { highlightTitle }</Text>
+            <Text style={ styles.description }>{'\n\n'}{ description }</Text>
         </Text>
     )
 }
