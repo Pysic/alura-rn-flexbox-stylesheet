@@ -14,9 +14,9 @@ export default function Header({ name, image }: HeaderProps) {
                 <StarIcon />
             </View>
 
-            <View>
-                <View></View>
-                <Image source={ image } />
+            <View style={{ height: 340, marginTop: 12, marginRight: 12, marginBottom: 48 }}>
+                <View style={{ position: 'absolute', bottom: 12, left: 12, borderColor: '#22D4FD', borderRadius: 16, borderWidth: 2, width: '100%', height: '100%'}}></View>
+                <Image source={ image } resizeMode="cover" style={{ borderRadius: 16, width: '100%', height: '100%' }}/>
             </View>
         </View>
     )
